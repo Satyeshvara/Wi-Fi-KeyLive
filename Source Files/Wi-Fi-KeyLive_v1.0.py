@@ -64,19 +64,10 @@ class WiFiKeyLive:
         if File_PATH:
             with open(File_PATH, "w") as File_Export:
                 json.dump(Data, File_Export, indent=4)
-            self.Popup_Export()
-
-    def Popup_Export(self):
-        PopupExport_Window = tk.Toplevel(self.Window)
-        PopupExport_Window.title("Exported")
-        PopupExport_Window.geometry("300x100")
-        Label = ttk.Label(PopupExport_Window, text="Data exported successfully!")
-        Label.pack(padx=20, pady=10)
-        Button_OK = ttk.Button(PopupExport_Window, text="OK", command=PopupExport_Window.destroy)
-        Button_OK.pack(pady=10)
+                messagebox.showinfo("Exported", "Data exported successfully!")
 
     def Check_for_Updates(self):
-        webbrowser.open("https://www.github.com/satishkumarsingh2024/Wi-Fi-KeyLive/")
+        webbrowser.open("https://www.github.com/satishkumarsingh2024/Wi-Fi-KeyLive")
 
     def About(self):
         messagebox.showinfo("About", "Wi-Fi Key (Live) (v1.0)\nDeveloped by Satish Kumar Singh")
