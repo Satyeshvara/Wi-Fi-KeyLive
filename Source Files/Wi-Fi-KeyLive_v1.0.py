@@ -67,7 +67,7 @@ class WiFiKeyLive:
                 messagebox.showinfo("Exported", "Data exported successfully!")
 
     def Check_for_Updates(self):
-        webbrowser.open("https://www.github.com/satishkumarsingh2024/Wi-Fi-KeyLive")
+        webbrowser.open("https://www.github.com/Satyeshvara/Wi-Fi-KeyLive")
 
     def About(self):
         messagebox.showinfo("About", "Wi-Fi Key (Live) (v1.0)\nDeveloped by Satish Kumar Singh")
